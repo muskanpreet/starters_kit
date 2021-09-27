@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Starter Kit</title>
+	<meta name="description" content="Card Expansion Effect with SVG clipPath" />
+	<meta name="keywords" content="clipPath, svg, effect, layout, expansion, images, grid, polygon" />
+	<meta name="author" content="Claudio Calautti for Codrops" />
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="css/card.css" />
+	<link rel="stylesheet" type="text/css" href="css/pattern.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!--[if IE]>
+	  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<script>
+	if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
+		var root = document.getElementsByTagName('html')[0];
+		root.setAttribute('class', 'ff');
+	};
+	</script>
+</head>
+
+<body class="demo-3" id="bg1">
+<div class="overlay"></div>
+	
+
+
+	
+
+	<!-- <div class="container">
+		<header class="codrops-header">
+			<div class="codrops-links">
+				<a class="codrops-icon codrops-icon--prev" href="http://tympanus.net/Development/ColorExtraction/" title="Previous Demo"><span>Previous Demo</span></a>
+				<a class="codrops-icon codrops-icon--drop" href="http://tympanus.net/codrops/?p=24222" title="Back to the article"><span>Back to the Codrops article</span></a>
+			</div>
+        </div> -->
+		
+			<p id="headingg">
+				Starter's Kit
+			</p>
+	
+
+			<nav class="codrops-demos">
+				<!-- <a href="index.html">Demo 1</a>
+				<a href="index2.html">Demo 2</a>
+				<a class="current-demo" href="index3.html">Demo 3</a>
+				<a href="index4.html">Demo 4</a> -->
+			</nav>
+		</header>
+		<div class="content">
+			<!-- trianglify pattern container -->
+			<div class="pattern pattern--hidden"></div>
+			<!-- cards -->
+			<div class="wrapper">
+                <div id="leftrot">
+				<div class="card">
+					<div class="card__container card__container--closed" >
+						<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+							<defs>
+								<clipPath id="clipPath1">
+									<polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+								</clipPath>
+							</defs>
+							<image clip-path="url(#clipPath1)" width="1920" height="500" xlink:href="img/campus.jpeg"></image>
+						</svg>
+						<!-- <div id="container"> -->
+							<!-- 	الصورة ياللي بداخل الحاوية -->
+								<!-- <img src="./img/campus.jpeg" alt="Omar"> </a>
+								<div class="box-text">
+								<h1>Elzero Web School</h1>
+								<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
+								</div>
+							</div> -->
+						<div class="card__content" id="bg">
+							<i class="card__btn-close fa fa-times"></i>
+							<div class="card__caption cptn">
+                                
+								<h2 class="card__title">ACADEMICS</h2>
+							</div>  
+							<div class="card__copy">
+								<div class="meta">
+									<!-- <img class="meta__avatar" src="img/ssb.jpeg" alt="author01" />
+									<span class="meta__author" >Mr. S.S. BHATIA <br> Dean of Academic Affairs</span> -->
+									<!-- <span class="meta__date"></span> -->
+								</div>
+
+								<div class="icons" >
+									
+									<div id="icon1">
+
+								<i class="fas fa-building"></i>
+								<p>Departments <br> and buildings</p>
+								
+								</div>
+								<div id="icon2">
+
+								<i class="fas fa-book-open"></i>
+								<p>Electives</p>
+								</div>
+								<div id="icon3">
+
+								<i class="fas fa-edit"></i>
+								<p>Grading System</p>
+								</div>
+								</div>
+								<h2 id="department">Departments & Branches:</h2>
+								<p class="para">After getting into an engineering college, the most important prospect to keep 
+									in mind are the branches. Every branch comes under their respective departments. So, in order to chase your 
+									dreams, you must learn about the branches without any bias and see if your interests and goals align with a 
+									job you desire. Here, at Thapar Institute of Engineering and Technology we have compiled a list of Departments and 
+									Branches to provide you a thorough insight on the matter so that you don’t end up regretting your choices! </p>
+								<h2>Electives</h2>
+								<p class="para">General Electives are courses which are taken up by the students as part of their programs of study which 
+									satisfies the requirement of a degree. They allow the student to explore and gain insight on various subjects beyond the ones in the textbook.
+									Thapar Institute of Engineering and Technology offers variety of electives based on the semesters in a particular branch which helps the students
+									 gain a practical perspective of their respective industries. Some of the listed ones are-
+									</p>
+									<table>
+										<tr class="tddd">
+											<td>S.No.</td>
+											<td>Code</td>
+											<td>Subject name</td>
+											<td>L</td>
+											<td>T</td>
+											<td>P</td>
+											<td>Cr</td>
+										</tr>
+										<tr>
+											<td>1</td>
+											<td>UHU006</td>
+											<td>Introductory Course in French</td>
+											<td>3</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+										</tr>
+										<tr>
+											<td>2</td>
+											<td>UCS001</td>
+											<td>Introduction to Cyber Security</td>
+											<td>3</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td>UHU007</td>
+											<td>Employability Development Skills</td>
+											<td>3</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+										</tr>
+										<tr>
+											<td>4</td>
+											<td>UEN004</td>
+											<td>Technologies for Sustainable Development</td>
+											<td>3</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+										</tr>
+										<tr>
+											<td>5</td>
+											<td>UHU008</td>
+											<td>Introduction To Corporate Finance</td>
+											<td>3</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+										</tr>
+										<tr>
+											<td>6</td>
+											<td>UHU009</td>
+											<td>Introduction to Cognitive Science</td>
+											<td>3</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+										</tr>
+										<tr>
+											<td>7</td>
+											<td>UPH063</td>
+											<td>Nano Science and Nano-Materials</td>
+											<td>3</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+										</tr>
+										<tr>
+											<td>8</td>
+											<td>UMA066</td>
+											<td>Graph Theory and Applications</td>
+											<td>3</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+										</tr>
+										<tr>
+											<td>9</td>
+											<td>UMA061</td>
+											<td>Advanced Numerical Methods</td>
+											<td>3</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+										</tr>
+										<tr>
+											<td>10</td>
+											<td>UBT509</td>
+											<td>Biology for Engineers</td>
+											<td>3</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+										</tr>
+									</table>
+									<h2>Minor in CSE-</h2>
+									<p class="para">An optional 23 credit course is offered to students of non-CSE streams comprising of 6 subjects. 
+										The courses are taught online (based on the current covid scenario) and offline either in the evenings of regular 
+										working days or over the weekend. A fee of Rs. 10,000 is charged per course if it is not offered in the regular curriculum. 
+										A student is awarded a certificate of “Minor in CSE” upon completion.
+									</p>
+							</div>
+						</div>
+					</div>
+
+                </div>
+				</div>
+                <div id="effectpurpose">
+				<div class="card">
+					<div class="card__container card__container--closed">
+						<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+							<defs>
+								<clipPath id="clipPath2">
+									<polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+								</clipPath>
+							</defs>
+							<image clip-path="url(#clipPath2)" width="1920" height="500" xlink:href="img/faculty.jpeg"></image>
+						</svg>
+						<div class="card__content" id="bg">
+							<i class="card__btn-close fa fa-times"></i>
+							<div class="card__caption cptn">
+								<h2 class="card__title">FACILITIES</h2>
+							</div>
+							<div class="card__copy">
+								<div class="meta">
+									<img class="meta__avatar" src="img/authors/2.png" alt="author02" />
+									<span class="meta__author">Frank Posterius</span>
+									<span class="meta__date">06/16/2015</span>
+								</div>
+								<div class="content">
+                                    <h2>FACILITIES</h2>
+    
+                                    <p>Thapar not only takes care of your ward, but it also considers its prime responsibility to ensure that your stay at the campus is taken care of in the best possible way. To cater to the same, it has well-furnished guest rooms available 24*7 for your service. For convenient and easy flow, it is advisable to book your room before reaching and also do give a visit to the beautiful campus.</p>
+                                    
+    
+                                    <h2>MEDICAL</h2>
+                                    <p>Thapar institute of engineering and technology has a well-equipped medical centre along with trained doctors and nurses always available to take care of. It provides you with all the basic facilities and first aid at their point. Other features include:</p>
+    
+                                    <ul>
+                                        <li>Availability of ambulance 24*7.</li>
+                                        <li>Institute has proper medical counseling and diagnosis before prescribing any medicines.</li>
+                                        <li>There is the availability of first aid kits and a medical counselor at each hostel.</li>
+                                        <li>The institute also has many tie-ups with various hospitals in Patiala.</li>
+                                    </ul>
+                                    <h2>SPORTS</h2>
+                                    <p>“Play for the number in front of your jersey and people will start remembering the name on the back”. </p>
+                                    <p>Sports play an essential role in holistic development of students. Along with catering to their physical and mental fitness, it teaches them important values such as punctuality, discipline, teamwork and dedication. Here at Thapar Institute of Engineering and Technology, we firmly believe in the overall development of our students and have provided the best sports facilities that not only match the international standards but also give a truly global experience to all the students.</p>
+                                    <br>
+                                    <p>Some of the facilities listed above are :</p>
+                                    <ol>
+                                        <li>Volleyball : Thapar has three volleyball grounds alongside the basketball court which are supervised under the watchful eyes of our coaches.</li>
+                                        <img src="./img/volleyball.jpeg" alt="">
+                                        <li>Cricket: We have two lush green cricket grounds with leather ball turf wickets for our future cricketers.</li>
+                                        <img src="./img/cricket.jpeg" alt="">
+                                        <li>Athletics : We have a 400m water resistant IAAF approved Synthetic ground which is built and maintained as per the international requirements.</li>
+                                        <img src="./img/sports.jpeg" alt="">
+                                        <img src="./img/syntheticgr.jpeg" alt="">
+                                        <li>Football:We have two lush green football fields for channeling your inner Ronaldo/Messi.
+                                        </li>
+                                        <img src="./img/football.jpeg" alt="">
+                                        <li>Basketball:Thapar has one synthetic and two cemented basketball courts, of which one is reserved for girls to practice.</li>
+                                        <img src="./img/basketball.jpeg" alt="">
+                                        <li>Badminton:Along with an indoor synthetic court, there are nets in the open for all time use. Badminton nets are also provided in some hostels. 
+                                        </li>
+                                        <img src="./img/badminton.jpeg" alt="">
+                                        <li>Tennis:Institute has four synthetic lawn tennis courts for trained players, and two cemented courts and a practice wall for beginners.</li>
+                                        <img src="./img/tennis.jpeg" alt="">
+                                        <li>Swimming pools: Thapar has a single standard pool for rejuvenation and training with the guidance of our well-qualified coaches.</li>
+                                        <img src="./img/swimmingpool.jpeg" alt="">
+                                        <li>Gym Halls in all Hostels: Our gyms are highly equipment specialized which are dedicated in helping you maintain your fitness goals while having a great college experience.</li>
+                                        <img src="./img/gym.jpeg" alt="">
+                                    </ol>
+    
+                                    <h2>LIBRARY</h2>
+                                    <p>"Everything you need for a better future and success has already been written. And guess what? All you have to do is go to the library.
+     
+                                        Libraries are known to be Gateways to knowledge and play a very significant role in society and help shape the students during their formative years of college. The Nava Nalanda Library at Thapar University is a pious place and a centre of great learning.
+                                        Nava Nalanda Central Library is housed in centrally air-conditioned spacious premises covering an area of 25,000 square feet. It has over one lakh books ranging from reference type of books to course materials and textbooks. The collection includes books on various subjects related to Engineering, Management, Humanities, Social Sciences, and Fiction. The Library remains open 24 X 7 throughout the year. The library staff comprises 22 cooperative and vigilant professionals who are well maintaining the library. So do give this beautiful place a visit once you are in college!
+                                        </p>
+    
+                                        <h2>Thapar Institute Counselling Cell (TICC)</h2>
+                                        <p>Mental health problems, especially for students enrolled in colleges, are on the rise. These problems can negatively impact a student’s life be it academics or social and hamper the success of the student. To cope with this issue, Thapar University has a special cell-TICC.
+                                            The role of TICC is to counsel the students, understand their problems and true potential and bring about positive changes in their behaviours.
+                                            </p>
+    
+                                </div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+                <div id="rightrot">
+				<div class="card">
+					<div class="card__container card__container--closed">
+						<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+							<defs>
+								<clipPath id="clipPath3">
+									<polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+								</clipPath>
+							</defs>
+						<image clip-path="url(#clipPath3)" width="1920" height="500" xlink:href="img/4.jpg"></image>
+						</svg>
+						<div class="card__content" id="bg"> 
+							<i class="card__btn-close fa fa-times"></i>
+							<div class="card__caption cptn">
+								<h2 class="card__title">FOOD JOINTS</h2>
+							</div>
+							<div class="card__copy">
+								<div class="meta">
+									<!-- <img class="meta__avatar" src="img/authors/3.png" alt="author03" />
+									<span class="meta__author">Sarah Lester</span>
+									<span class="meta__date">06/16/2015</span> -->
+								</div>
+								<p class="para">They say that the best memories are created over food.
+									If you're skeptical about the foodie in you, Thapar has a lot to offer.
+									Right from the mess to the canteens, food is something that will never disappoint you.
+									Here are some places where you'll be spending most of your time in the coming years :</p>
+								<h2>Jaggi - </h2>
+								<p class="para">With bonds brewing every second, this is the place where friends become family.
+									All you need is a glass of the famous Thapar cold coffee to rejuvenate from all the stress about assignments, 
+									attendance and the evaluations.
+									</p>
+									<h2>G- Block - </h2>
+									<p class="para">Craving Desi Street Food?
+										Want to taste the authentic North Indian flavours?
+										G-Block is your go-to place.
+										The Kathi Rolls, Biryani and the wholesome conversations will make you fall in love with this place.
+										</p>
+										<h2>COS - </h2>
+										<p class="para">At Thapar, COS is not a place. It's a feeling. 
+											It's where creativity gives birth to ideas and ideas turn into reality.
+											If pizza is your first love, wraps and salads are your comfort food and refreshing mocktails are like water 
+											for you, COS will have your back.
+										</p>
+										<h2>Library Cafeteria -</h2>
+										<p class="para">This is the place that actually helps you survive through the lectures in the academic block.
+											A heaven for all the coffee addicts, this place is where you wanna be if you can't survive without brownies.
+										</p>
+										<h2>
+											Iqbal Juice Corner -
+										</h2>
+										<p class="para">For all the fitness and health enthusiasts, 
+											Don't worry because Thapar has got you covered.
+											This place right in front of the G-Block Canteen is the favorite spot for all the juice and fruit lovers.
+										</p>
+										<h2>Night Canteens -</h2>
+										<p class="para">Are you not sure about how you'll pull out all-nighters before an exam without food?
+											Night Canteens are there to your rescue.
+											These are set up at almost every hostel Mess so that you don't have to worry about your midnight munchies.
+											</p>
+
+							</div>
+						</div>
+						
+
+
+
+
+					</div>
+				</div>
+            
+				<div class="card" >
+					<div class="card__container card__container--closed">
+						<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+							<defs>
+								<clipPath id="clipPath4">
+									<polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+								</clipPath>
+							</defs>
+							<image clip-path="url(#clipPath4)" width="1920" height="500" xlink:href="img/d.jpg"></image>
+						</svg>
+						<div class="card__content" id="bg">
+							<i class="card__btn-close fa fa-times"></i>
+							<div class="card__caption cptn">
+								<h2 class="card__title">LIFE BEFORE 5</h2>
+								<p class="card__subtitle"></p>
+							</div>
+							<div class="card__copy">
+								<div class="meta">
+									<!-- <img class="meta__avatar" src="img/authors/4.png" alt="author04" />
+									<span class="meta__author">Lena Bestofos</span>
+									<span class="meta__date">06/14/2015</span> -->
+								</div>
+								<h2>Classes</h2>
+								<p class="para">As per the current instructions,the classes will be held partially in online
+									 and offline modes,due to the the COVID-19 pandemic.Online classes are conducted on zoom
+									  and the link for the same is provided in the Time Table.Also the recorded sessions and 
+									 the other e-content can be accessed through Thapar Learning Management System(LMS).
+									Also, students have to maintain an overall attendance of 75% including all the components.
+									</p>
+								<h2>Time Table </h2>
+								<p class="para">Classes are generally scheduled between 8 am to 6 pm, which involves tutorials,
+									 lectures and labs. You get free slots between the regular classes which are distributed 
+									 according to the subgroups. Lectures are represented by L, tutorials by T and Practicals by
+									  P beside the subject code. The time table also shows the teacher code and the Zoom Link/ Lecture Hall.
+									</p>
+									<h2>Webkiosk</h2>
+									<p class="para">It is the portal of the college where you can access your personal details 
+										including your CGPA,SGPA,Hostel status etc.
+										Also, it is the place through which you can make your fee payments and track it.
+									</p>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+            <div id="effectpurpose">
+				<div class="card">
+					<div class="card__container card__container--closed">
+						<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+							<defs>
+								<clipPath id="clipPath5">
+									<polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+								</clipPath>
+							</defs>
+							<image clip-path="url(#clipPath5)" width="1920" height="500" xlink:href="img/patiala2.jpeg"></image>
+						</svg>
+						<div class="card__content" id="bg">
+							<i class="card__btn-close fa fa-times"></i>
+							<div class="card__caption cptn">
+								<h2 class="card__title">LIFE IN PATIALA</h2>
+								<!-- <p class="card__subtitle">A Makrel's story</p> -->
+							</div>
+							<div class="card__copy">
+								<div class="meta">
+									<img class="meta__avatar" src="img/authors/5.png" alt="author05" />
+									<span class="meta__author">Michaela Walters</span>
+									<span class="meta__date">06/11/2015</span>
+								</div>
+								<p class="para">Living in a new city can be intimidating , but Patiala is one of 
+									the most welcoming cities with its rich culture and the culmination 
+									of many good cuisines . The city will provide the safe environment to live in , 
+									but still exciting enough to make your stay a memorable one . </p>
+									<h2>Bus stand</h2>
+									<img href="">
+									<p class="para">The Patiala Bus Stop can help you hitch tides to several locations,including 
+										Chandigarh,Delhi,Ludhiana,Sangrur etc,with a 24x7 running buses
+									</p>
+									<img src="./img/bus-stand-patiala.jpg" alt="">
+									<h2 >Quila Mubarak</h2>
+									<p class="para">Quila Mubarak is best place to visit to witness Sikh Architect.The complex
+										 was built under the rule of Maharaja Ala Singh in 1764. The complex is divided
+										  into multiple sections that depict the life at the time of its use by the kings.
+									</p>
+									<img src="./img/qila.jpeg" alt="">
+									<h2>Barandari Gardens</h2>
+									<p class="para">Barandari gardens is the calmest place to visit in between the hustle-bustle of the city. 
+										The name Baradari refers to the 12 doors that serve as an entrance to this historic garden.
+										 The garden is a fine specimen of Mughal era architecture that blends Indian, Persian and 
+										 Turkic architecture.</p>
+										 <img src="./img/bardari.jpeg" alt="">
+										 <h2>Omaxe mall</h2>
+										 <p class="para">This is the place where the people from all spheres of life come and leave with fun-filled
+											  memories. It is the epicenter for the festive vibes and best place for shopping.It is place
+											   that reflects the urban nature of the city and is the epicenter for all festive vibes.</p>
+											   <img src="./img/omaxe.jpeg" alt="">
+										<h2>Phul Cinema</h2>
+										<p class="para">the theatre in Patiala which has become the hub for cinemagoers is Phul Cinema.Phul Cinema has 
+											recently renovated and is giving awesome experience its customers.</p>
+											<img src="./img/phooltheatre.jpeg" alt="">
+											<h2>Sheesh mehel</h2>
+											<p class="para">literally meaning the palace of mirrors, it is a small part of the Old Moti Bagh Palace that
+												 was built in the 19th century by the Maharajas. The Lakshman Jhula, a bridge that runs across
+												  the lake is the highlight of the Mahal.	</p>
+												  <img src="./img/sheesh.jpeg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+                <div id="leftrot">
+				<div class="card">
+					<div class="card__container card__container--closed">
+						<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+							<defs>
+								<clipPath id="clipPath6">
+									<polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+								</clipPath>
+							</defs>
+							<image clip-path="url(#clipPath6)" width="1920" height="500" xlink:href="img/socbw.jpeg"></image>
+						</svg>
+						<div class="card__content">
+							<i class="card__btn-close fa fa-times"></i>
+							<div class="card__caption cptn">
+								<h2 class="card__title">SOCIETIES</h2>
+							</div>
+							<div class="card__copy">
+								<div class="meta">
+									<img class="meta__avatar" src="img/authors/6.png" alt="author06" />
+									<span class="meta__author">Tom Goldman</span>
+									<span class="meta__date">06/10/2015</span>
+								</div>
+								<p>Business model canvas bootstrapping deployment startup. In A/B testing pivot niche market alpha conversion startup down monetization partnership business-to-consumer success for investor mass market business-to-business.</p>
+								<p>Release creative social proof influencer iPad crowdsource gamification learning curve network effects monetization. Gamification business plan mass market www.discoverartisans.com direct mailing ecosystem seed round sales long tail vesting period.</p>
+								<p>Product management ramen bootstrapping seed round venture holy grail technology backing partner network entrepreneur beta marketing value proposition. Android stealth conversion scrum project network effects. Creative alpha long tail conversion stealth growth hacking iteration investor A/B testing prototype customer. Startup www.discoverartisans.com direct mailing launch party partnership market ramen metrics focus value proposition.</p>
+								<p>Stock infrastructure seed round sales paradigm shift technology user experience focus gamification. Partnership metrics business plan stealth business-to-business. Deployment graphical user interface monetization. Twitter incubator scrum project entrepreneur branding burn rate ramen backing paradigm shift virality crowdsource.</p>
+								<p>Social proof MVP ecosystem. Ramen launch party pitch deployment stealth. Vesting period MVP equity. Focus creative partnership founders iteration agile development infographic.</p>
+								<p>Low hanging fruit burn rate innovator user experience niche market A/B testing creative launch party product management release. Www.discoverartisans.com influencer business model canvas user experience gamification paradigm shift startup research &amp; development iPad agile development. Strategy incubator infographic success marketing buzz A/B testing responsive web design. Traction research &amp; development pitch seed money venture niche market accelerator network effects.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+			</div>
+			<!-- /cards -->
+		</div><!-- /content -->
+   
+		<!-- Related demos -->
+		<!-- <section class="content content--related">
+			<p>If you enjoyed this demo you might also like:</p>
+			<a class="media-item" href="http://tympanus.net/Development/AnimatedGridLayout/">
+				<img class="media-item__img" src="img/related/GridItemAnimation.jpg">
+				<h3 class="media-item__title">Grid Item Animation Layout</h3>
+			</a>
+			<a class="media-item" href="http://tympanus.net/Tutorials/ThumbnailGridExpandingPreview/">
+				<img class="media-item__img" src="img/related/ThumbnailGridExpandingPreview.jpg">
+				<h3 class="media-item__title">Thumbnail Grid with Expanding Preview</h3>
+			</a> -->
+		</section>
+	</div>
+	<!-- /container -->
+	<!-- JS -->
+	<script src="js/vendors/trianglify.min.js"></script>
+	<script src="js/vendors/TweenMax.min.js"></script>
+	<script src="js/vendors/ScrollToPlugin.min.js"></script>
+	<script src="js/vendors/cash.min.js"></script>
+	<script src="js/Card-polygon.js"></script>
+	<script src="js/demo-3.js"></script>
+</body>
+
+</html>
